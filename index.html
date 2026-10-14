@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Austin Gravel Ride 2025</title>
+    <title>Austin Gravel Ride 2026</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -52,14 +52,12 @@
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center gap-2">
                     <i data-lucide="bike" class="h-6 w-6 text-brand-green"></i>
-                    <span class="font-bold text-xl tracking-tight text-brand-dark">GravelRide<span class="text-brand-green">25</span></span>
+                    <span class="font-bold text-xl tracking-tight text-brand-dark">GravelRide<span class="text-brand-green">26</span></span>
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#details" class="text-stone-600 hover:text-brand-green transition-colors font-medium">Details</a>
-                    <a href="#location" class="text-stone-600 hover:text-brand-green transition-colors font-medium">Location</a>
-                    <a href="#expect" class="text-stone-600 hover:text-brand-green transition-colors font-medium">What to Expect</a>
                 </div>
-                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bike+Ride&dates=20251226T093000/20251226T123000&details=Gravel+ride+in+Austin,+approx+13+miles.&location=67XG%2B8C+Austin,+Texas" target="_blank" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-stone-700 transition-colors shadow-lg flex items-center gap-2">
+                <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bike+Ride&dates=20261127T093000/20261127T123000&details=Gravel+ride+in+Austin." target="_blank" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-stone-700 transition-colors shadow-lg flex items-center gap-2">
                     <i data-lucide="calendar-plus" class="h-4 w-4"></i>
                     Add to Calendar
                 </a>
@@ -76,7 +74,7 @@
                 Upcoming Event
             </div>
             <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-                The Gravel</span> Ride
+                The Gravel Ride
             </h1>
             <p class="text-xl md:text-2xl text-stone-300 max-w-2xl mx-auto font-light mb-10">
                 Join us for a morning adventure through the dirt and gravel of Austin. 
@@ -88,7 +86,7 @@
                     <i data-lucide="calendar" class="h-6 w-6 text-brand-accent"></i>
                     <div class="text-left">
                         <p class="text-xs text-stone-400 uppercase tracking-wider">Date</p>
-                        <p class="font-semibold">Dec 26th, 2025</p>
+                        <p class="font-semibold">Nov 27th, 2026</p>
                     </div>
                 </div>
                 <div class="flex items-center justify-center gap-3 bg-white/10 backdrop-blur-md px-6 py-4 rounded-xl border border-white/10">
@@ -105,18 +103,8 @@
     <!-- Quick Stats Grid -->
     <section id="details" class="py-16 bg-white">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 -mt-24 relative z-10">
-                <!-- Stat Card 1 -->
-                <div class="bg-brand-light p-8 rounded-2xl shadow-xl border-t-4 border-brand-green transform hover:-translate-y-1 transition-transform duration-300">
-                    <div class="h-12 w-12 bg-white rounded-full flex items-center justify-center mb-4 shadow-sm">
-                        <i data-lucide="ruler" class="h-6 w-6 text-brand-green"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold text-brand-dark mb-2">Distance</h3>
-                    <p class="text-3xl font-bold text-stone-600">~13 <span class="text-lg font-normal text-stone-400">miles</span></p>
-                    <p class="text-sm text-stone-500 mt-2">A perfect intermediate distance for a nice morning ride.</p>
-                </div>
-
-                <!-- Stat Card 2 -->
+            <div class="max-w-sm mx-auto -mt-24 relative z-10">
+                <!-- Terrain Stat Card -->
                 <div class="bg-brand-light p-8 rounded-2xl shadow-xl border-t-4 border-brand-earth transform hover:-translate-y-1 transition-transform duration-300">
                     <div class="h-12 w-12 bg-white rounded-full flex items-center justify-center mb-4 shadow-sm">
                         <i data-lucide="mountain" class="h-6 w-6 text-brand-earth"></i>
@@ -124,87 +112,6 @@
                     <h3 class="text-lg font-semibold text-brand-dark mb-2">Terrain</h3>
                     <p class="text-2xl font-bold text-stone-600">Gravel & Dirt</p>
                     <p class="text-sm text-stone-500 mt-2">Mostly unpaved surfaces.</p>
-                </div>
-
-                <!-- Stat Card 3 -->
-                <div class="bg-brand-light p-8 rounded-2xl shadow-xl border-t-4 border-stone-500 transform hover:-translate-y-1 transition-transform duration-300">
-                    <div class="h-12 w-12 bg-white rounded-full flex items-center justify-center mb-4 shadow-sm">
-                        <i data-lucide="map-pin" class="h-6 w-6 text-stone-600"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold text-brand-dark mb-2">Location</h3>
-                    <p class="text-xl font-bold text-stone-600">Austin, TX</p>
-                    <p class="text-sm text-stone-500 mt-2">67XG+8C (Plus Code)</p>
-                    <button onclick="copyLocation()" class="mt-4 text-xs font-semibold text-brand-green hover:underline flex items-center gap-1">
-                        <i data-lucide="copy" class="h-3 w-3"></i> Copy & Paste into Google Maps
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Location / Map Section -->
-    <section id="location" class="py-20 bg-stone-100">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row gap-12 items-center">
-                <div class="md:w-1/2">
-                    <span class="text-brand-green font-semibold tracking-wider uppercase text-sm">Meeting Point</span>
-                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mt-2 mb-6">Where We Start</h2>
-                    <p class="text-stone-600 mb-6 leading-relaxed">
-                        We are meeting at the coordinates below. Please arrive 10 minutes early to gear up and do a quick safety check. There is parking available nearby.
-                    </p>
-                    <div class="bg-white p-4 rounded-lg shadow-sm border border-stone-200 inline-block mb-8">
-                        <p class="font-mono text-lg text-brand-dark flex items-center gap-3">
-                            <i data-lucide="navigation" class="text-brand-green"></i>
-                            67XG+8C Austin, Texas
-                        </p>
-                    </div>
-                    <div>
-                        <a href="https://www.google.com/maps/search/?api=1&query=67XG%2B8C+Austin,+Texas" target="_blank" class="inline-flex items-center gap-2 bg-brand-green text-white px-6 py-3 rounded-lg hover:bg-green-800 transition-colors shadow-md">
-                            Open in Google Maps
-                            <i data-lucide="external-link" class="h-4 w-4"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="md:w-1/2 w-full h-80 bg-stone-200 rounded-2xl overflow-hidden shadow-lg relative group">
-                    <!-- Decorative Map Placeholder since we can't embed dynamic maps without API key -->
-                    <img src="https://drive.google.com/thumbnail?id=1qUv8hCDpc5vaDUZApV7hzo-t-JlJ0iSf&sz=w1000" alt="Map of bike ride route in Austin" class="w-full h-full object-cover">
-                    <!-- Overlay for hover effect -->
-                    <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors"></div>
-                </div>
-            </div>
-        </div>
-            </section>
-
-    <!-- What to Expect -->
-    <section id="expect" class="py-20 bg-white">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">What to Expect</h2>
-                <div class="h-1 w-20 bg-brand-green mx-auto mt-4 rounded-full"></div>
-            </div>
-                <!-- Item 1 -->
-                <div class="flex gap-4">
-                    <div class="flex-shrink-0 mt-1">
-                        <div class="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center">
-                            <i data-lucide="coffee" class="h-5 w-5 text-brand-green"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-semibold text-brand-dark">Hydration & Fuel</h4>
-                        <p class="text-stone-600 mt-1">Bring plenty of hydration and snacks.</p>
-                    </div>
-                </div>
-                 <!-- Item 2 -->
-                 <div class="flex gap-4">
-                    <div class="flex-shrink-0 mt-1">
-                        <div class="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center">
-                            <i data-lucide="shield" class="h-5 w-5 text-brand-green"></i>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-semibold text-brand-dark">Safety First</h4>
-                        <p class="text-stone-600 mt-1">Helmets are mandatory.</p>
-                    </div>
                 </div>
             </div>
         </div>
@@ -215,7 +122,7 @@
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex items-center gap-2">
                 <i data-lucide="bike" class="h-6 w-6 text-stone-500"></i>
-                <span class="font-bold text-lg text-stone-200">GravelRide<span class="text-brand-green">25</span></span>
+                <span class="font-bold text-lg text-stone-200">GravelRide<span class="text-brand-green">26</span></span>
             </div>
             <p class="text-sm">
                 Have fun!
@@ -227,49 +134,6 @@
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
-
-        // Clipboard function
-        function copyLocation() {
-            const locationCode = "67XG+8C Austin, Texas";
-            
-            // Modern clipboard API usually requires secure context (HTTPS)
-            // Fallback for older browsers or non-secure contexts
-            if (navigator.clipboard && window.isSecureContext) {
-                navigator.clipboard.writeText(locationCode).then(() => {
-                    showToast();
-                });
-            } else {
-                // Fallback method
-                let textArea = document.createElement("textarea");
-                textArea.value = locationCode;
-                textArea.style.position = "fixed";
-                textArea.style.left = "-9999px";
-                document.body.appendChild(textArea);
-                textArea.focus();
-                textArea.select();
-                try {
-                    document.execCommand('copy');
-                    showToast();
-                } catch (err) {
-                    console.error('Unable to copy', err);
-                }
-                document.body.removeChild(textArea);
-            }
-        }
-
-        function showToast() {
-            // Create toast element
-            const toast = document.createElement('div');
-            toast.className = 'fixed bottom-4 right-4 bg-brand-dark text-white px-4 py-2 rounded-lg shadow-lg text-sm flex items-center gap-2 animate-bounce z-50';
-            toast.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Copied to clipboard!';
-            
-            document.body.appendChild(toast);
-
-            // Remove after 3 seconds
-            setTimeout(() => {
-                toast.remove();
-            }, 3000);
-        }
     </script>
 </body>
 </html>
