@@ -56,6 +56,7 @@
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#details" class="text-stone-600 hover:text-brand-green transition-colors font-medium">Details</a>
+                    <a href="#vote" class="text-stone-600 hover:text-brand-green transition-colors font-medium">Choose Trail</a>
                 </div>
                 <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Bike+Ride&dates=20261127T093000/20261127T123000&details=Gravel+ride+in+Austin." target="_blank" class="bg-brand-dark text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-stone-700 transition-colors shadow-lg flex items-center gap-2">
                     <i data-lucide="calendar-plus" class="h-4 w-4"></i>
@@ -117,6 +118,144 @@
         </div>
     </section>
 
+    <!-- Trail Selection Form Section -->
+    <section id="vote" class="py-20 bg-stone-100 border-t border-stone-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-brand-green font-semibold tracking-wider uppercase text-sm">Cast Your Vote</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mt-2">Select Our Trail</h2>
+                <p class="text-stone-600 mt-3 max-w-2xl mx-auto">
+                    Review the two trail terrain options below, check out their routes on Google Maps, and submit your pick for the ride. Your response will be sent directly to <strong>dan.reddi@icloud.com</strong>.
+                </p>
+            </div>
+
+            <form id="trailForm" action="https://formsubmit.co/dan.reddi@icloud.com" method="POST" class="space-y-8">
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_subject" value="Austin Gravel Ride 2026 - Trail Selection Vote">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <!-- Two Trail Choices Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    
+                    <!-- Choice 1: Lady Bird Lake Trail -->
+                    <label for="choice-ladybird" class="cursor-pointer group relative flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-transparent hover:border-brand-green/50 has-[:checked]:border-brand-green has-[:checked]:ring-4 has-[:checked]:ring-brand-green/15 transition-all duration-200">
+                        <input type="radio" id="choice-ladybird" name="Selected_Trail" value="Lady Bird Lake Trail" required class="peer sr-only">
+                        
+                        <!-- Trail Image -->
+                        <div class="relative h-60 w-full overflow-hidden bg-stone-200">
+                            <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSzJ8loxqOj2Y8LCT_2d00fEF-vVpJcRt45zAvt-DlelZRQ9ZgXGuv6xH0YqMOqNPGXfAOFxVBvF_O50Gg" alt="Lady Bird Lake Trail boardwalk and path in Austin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-brand-dark/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full">
+                                Option 1
+                            </div>
+                            <div class="absolute top-4 right-4 h-8 w-8 rounded-full bg-white/90 shadow flex items-center justify-center">
+                                <i data-lucide="check-circle-2" class="h-5 w-5 text-brand-green"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="text-2xl font-bold text-brand-dark">Lady Bird Lake Trail</h3>
+                                    <span class="text-xs font-semibold uppercase tracking-wider px-2.5 py-1 bg-lime-100 text-brand-green rounded-md">Easy / Flat</span>
+                                </div>
+                                <p class="text-xs text-stone-400 font-medium uppercase tracking-wider mb-3">Ann and Roy Butler Hike-and-Bike Trail</p>
+                                <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                                    <strong>Terrain Summary:</strong> A scenic ~10-mile loop circling Lady Bird Lake in the heart of Downtown Austin. The surface consists primarily of smooth crushed granite, hard-packed fine gravel, and concrete boardwalk sections over the water with minimal elevation gain. Ideal for a relaxed, fast-rolling gravel cruise with skyline views.
+                                </p>
+                            </div>
+
+                            <div class="pt-4 border-t border-stone-100 flex items-center justify-between gap-4">
+                                <a href="https://www.google.com/maps/search/?api=1&query=Ann+and+Roy+Butler+Hike+and+Bike+Trail+Lady+Bird+Lake+Austin+TX" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-green hover:text-green-900 bg-stone-100 hover:bg-stone-200 px-4 py-2 rounded-lg transition-colors">
+                                    <i data-lucide="map-pin" class="h-4 w-4"></i>
+                                    Google Maps
+                                    <i data-lucide="external-link" class="h-3.5 w-3.5"></i>
+                                </a>
+                                <span class="text-sm font-semibold text-stone-500 group-has-[:checked]:text-brand-green">
+                                    Click card to select
+                                </span>
+                            </div>
+                        </div>
+                    </label>
+
+                    <!-- Choice 2: Violet Crown Trail -->
+                    <label for="choice-violetcrown" class="cursor-pointer group relative flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-transparent hover:border-brand-green/50 has-[:checked]:border-brand-green has-[:checked]:ring-4 has-[:checked]:ring-brand-green/15 transition-all duration-200">
+                        <input type="radio" id="choice-violetcrown" name="Selected_Trail" value="Violet Crown Trail" required class="peer sr-only">
+                        
+                        <!-- Trail Image -->
+                        <div class="relative h-60 w-full overflow-hidden bg-stone-200">
+                            <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQ8MZAK0GlIsKRJWd6ea2FIIkiPznBFPfPo1J7JyvS_WoO--WznvxeUCuFwWIatsIBfb3_WXqVg9kCsMGY" alt="Cyclists riding on the Violet Crown Trail in Austin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-brand-dark/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full">
+                                Option 2
+                            </div>
+                            <div class="absolute top-4 right-4 h-8 w-8 rounded-full bg-white/90 shadow flex items-center justify-center">
+                                <i data-lucide="check-circle-2" class="h-5 w-5 text-brand-green"></i>
+                            </div>
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-6 flex-1 flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center justify-between gap-2 mb-2">
+                                    <h3 class="text-2xl font-bold text-brand-dark">Violet Crown Trail</h3>
+                                    <span class="text-xs font-semibold uppercase tracking-wider px-2.5 py-1 bg-amber-100 text-brand-earth rounded-md">Mixed / Rugged</span>
+                                </div>
+                                <p class="text-xs text-stone-400 font-medium uppercase tracking-wider mb-3">South Austin & Greenbelt Corridor</p>
+                                <p class="text-stone-600 text-sm leading-relaxed mb-4">
+                                    <strong>Terrain Summary:</strong> A diverse multi-surface trail weaving from Zilker Park south through the Barton Creek Greenbelt, Sunset Valley, and Circle C. Features decomposed crushed granite and packed dirt paths mixed with punchy limestone climbs, roots, and rocky greenbelt singletrack for a more adventurous off-road ride.
+                                </p>
+                            </div>
+
+                            <div class="pt-4 border-t border-stone-100 flex items-center justify-between gap-4">
+                                <a href="https://www.google.com/maps/search/?api=1&query=Violet+Crown+Trail+Austin+TX" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-green hover:text-green-900 bg-stone-100 hover:bg-stone-200 px-4 py-2 rounded-lg transition-colors">
+                                    <i data-lucide="map-pin" class="h-4 w-4"></i>
+                                    Google Maps
+                                    <i data-lucide="external-link" class="h-3.5 w-3.5"></i>
+                                </a>
+                                <span class="text-sm font-semibold text-stone-500 group-has-[:checked]:text-brand-green">
+                                    Click card to select
+                                </span>
+                            </div>
+                        </div>
+                    </label>
+
+                </div>
+
+                <!-- Rider Details & Submit -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg max-w-2xl mx-auto border border-stone-200">
+                    <h4 class="text-xl font-bold text-brand-dark mb-6 flex items-center gap-2">
+                        <i data-lucide="send" class="h-5 w-5 text-brand-green"></i>
+                        Submit Your Selection
+                    </h4>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label for="riderName" class="block text-sm font-medium text-stone-700 mb-1">Your Name *</label>
+                            <input type="text" id="riderName" name="Rider_Name" required placeholder="Jane Doe" class="w-full px-4 py-2.5 rounded-lg border border-stone-300 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none transition-all">
+                        </div>
+                        <div>
+                            <label for="riderEmail" class="block text-sm font-medium text-stone-700 mb-1">Your Email *</label>
+                            <input type="email" id="riderEmail" name="Rider_Email" required placeholder="jane@example.com" class="w-full px-4 py-2.5 rounded-lg border border-stone-300 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none transition-all">
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <label for="riderNotes" class="block text-sm font-medium text-stone-700 mb-1">Comments or Ride Preferences (Optional)</label>
+                        <textarea id="riderNotes" name="Comments" rows="2" placeholder="Any thoughts on pace, tire choice, or starting trailhead..." class="w-full px-4 py-2.5 rounded-lg border border-stone-300 focus:ring-2 focus:ring-brand-green focus:border-brand-green outline-none transition-all"></textarea>
+                    </div>
+
+                    <button type="submit" id="submitBtn" class="w-full bg-brand-green text-white font-semibold py-3.5 px-6 rounded-xl hover:bg-green-800 transition-colors shadow-md flex items-center justify-center gap-2">
+                        <i data-lucide="mail-check" class="h-5 w-5"></i>
+                        <span>Send Trail Choice to Dan</span>
+                    </button>
+
+                    <p id="formStatus" class="text-center text-sm mt-4 hidden"></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-brand-dark text-stone-400 py-12 border-t border-white/10">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
@@ -134,6 +273,67 @@
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
+
+        // Handle Form Submission to dan.reddi@icloud.com
+        const form = document.getElementById('trailForm');
+        const statusMsg = document.getElementById('formStatus');
+        const submitBtn = document.getElementById('submitBtn');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+            const selectedTrail = formData.get('Selected_Trail');
+            const riderName = formData.get('Rider_Name');
+            const riderEmail = formData.get('Rider_Email');
+            const comments = formData.get('Comments') || 'None';
+
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span>Sending...</span>';
+            statusMsg.classList.remove('hidden', 'text-red-600', 'text-brand-green');
+
+            try {
+                const response = await fetch('https://formsubmit.co/ajax/dan.reddi@icloud.com', {
+                    method: 'POST',
+                    headers: { 
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        _subject: `Austin Gravel Ride 2026 Vote: ${selectedTrail}`,
+                        Selected_Trail: selectedTrail,
+                        Rider_Name: riderName,
+                        Rider_Email: riderEmail,
+                        Comments: comments
+                    })
+                });
+
+                if (response.ok) {
+                    statusMsg.textContent = `Thanks, ${riderName}! Your vote for "${selectedTrail}" has been sent to dan.reddi@icloud.com.`;
+                    statusMsg.classList.add('text-brand-green', 'font-semibold');
+                    form.reset();
+                } else {
+                    throw new Error('Form service error');
+                }
+            } catch (err) {
+                // Fallback to direct mailto link if offline or blocked by local file security
+                const subject = encodeURIComponent(`Austin Gravel Ride 2026 Vote: ${selectedTrail}`);
+                const body = encodeURIComponent(
+                    `Selected Trail: ${selectedTrail}\n` +
+                    `Rider Name: ${riderName}\n` +
+                    `Rider Email: ${riderEmail}\n` +
+                    `Comments: ${comments}`
+                );
+                window.location.href = `mailto:dan.reddi@icloud.com?subject=${subject}&body=${body}`;
+                
+                statusMsg.textContent = 'Opening your email client to send your selection to dan.reddi@icloud.com...';
+                statusMsg.classList.add('text-brand-green', 'font-semibold');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i data-lucide="mail-check" class="h-5 w-5"></i><span>Send Trail Choice to Dan</span>';
+                lucide.createIcons();
+            }
+        });
     </script>
 </body>
 </html>
