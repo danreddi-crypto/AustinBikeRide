@@ -81,7 +81,7 @@
                 Dust off your bike and let's ride.
             </p>
             
-            <!-- Aligned Date & Time Cards -->
+            <!-- Aligned Date & Time Cards on Mobile & Desktop -->
             <div class="grid grid-cols-2 sm:flex sm:flex-row gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
                 <div class="flex items-center justify-start sm:justify-center gap-3 bg-white/10 backdrop-blur-md px-4 sm:px-6 py-4 rounded-xl border border-white/10">
                     <i data-lucide="calendar" class="h-5 w-5 sm:h-6 sm:w-6 text-brand-accent flex-shrink-0"></i>
@@ -108,7 +108,7 @@
                 <span class="text-brand-green font-semibold tracking-wider uppercase text-sm">Cast Your Vote</span>
                 <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mt-2">Select the Trail</h2>
                 <p class="text-stone-600 mt-3 max-w-2xl mx-auto">
-                    Review the two trail options below (with stock photos and custom route maps) and submit your pick for the ride.
+                    Review the two trail terrain options below and submit your pick for the ride.
                 </p>
             </div>
 
@@ -125,19 +125,14 @@
                     <label for="choice-ladybird" class="cursor-pointer group relative flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-transparent hover:border-brand-green/50 has-[:checked]:border-brand-green has-[:checked]:ring-4 has-[:checked]:ring-brand-green/15 transition-all duration-200">
                         <input type="radio" id="choice-ladybird" name="Selected_Trail" value="Lady Bird Lake Trail" required class="peer sr-only">
                         
-                        <!-- Image Gallery (Stock Photo + Uploaded Map image_2.png) -->
-                        <div class="grid grid-cols-2 gap-1 bg-stone-200 p-1 relative">
-                            <div class="absolute top-3 left-3 z-10 bg-brand-dark/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full">
+                        <!-- Trail Image -->
+                        <div class="relative h-60 w-full overflow-hidden bg-stone-200">
+                            <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSzJ8loxqOj2Y8LCT_2d00fEF-vVpJcRt45zAvt-DlelZRQ9ZgXGuv6xH0YqMOqNPGXfAOFxVBvF_O50Gg" alt="Lady Bird Lake Trail boardwalk and path in Austin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-brand-dark/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full">
                                 Option 1
                             </div>
-                            <div class="absolute top-3 right-3 z-10 h-8 w-8 rounded-full bg-white/90 shadow flex items-center justify-center">
+                            <div class="absolute top-4 right-4 h-8 w-8 rounded-full bg-white/90 shadow flex items-center justify-center">
                                 <i data-lucide="check-circle-2" class="h-5 w-5 text-brand-green"></i>
-                            </div>
-                            <div class="h-52 overflow-hidden bg-stone-900">
-                                <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSzJ8loxqOj2Y8LCT_2d00fEF-vVpJcRt45zAvt-DlelZRQ9ZgXGuv6xH0YqMOqNPGXfAOFxVBvF_O50Gg" alt="Lady Bird Lake Trail stock view" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            </div>
-                            <div class="h-52 overflow-hidden bg-stone-900">
-                                <img src="image_2.png" alt="Lady Bird Lake Trail route map" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
                         </div>
 
@@ -166,19 +161,14 @@
                     <label for="choice-violetcrown" class="cursor-pointer group relative flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-transparent hover:border-brand-green/50 has-[:checked]:border-brand-green has-[:checked]:ring-4 has-[:checked]:ring-brand-green/15 transition-all duration-200">
                         <input type="radio" id="choice-violetcrown" name="Selected_Trail" value="Violet Crown Trail" required class="peer sr-only">
                         
-                        <!-- Image Gallery (Stock Photo + Uploaded Map image.png) -->
-                        <div class="grid grid-cols-2 gap-1 bg-stone-200 p-1 relative">
-                            <div class="absolute top-3 left-3 z-10 bg-brand-dark/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full">
+                        <!-- Trail Image -->
+                        <div class="relative h-60 w-full overflow-hidden bg-stone-200">
+                            <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQ8MZAK0GlIsKRJWd6ea2FIIkiPznBFPfPo1J7JyvS_WoO--WznvxeUCuFwWIatsIBfb3_WXqVg9kCsMGY" alt="Cyclists riding on the Violet Crown Trail in Austin" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-brand-dark/80 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full">
                                 Option 2
                             </div>
-                            <div class="absolute top-3 right-3 z-10 h-8 w-8 rounded-full bg-white/90 shadow flex items-center justify-center">
+                            <div class="absolute top-4 right-4 h-8 w-8 rounded-full bg-white/90 shadow flex items-center justify-center">
                                 <i data-lucide="check-circle-2" class="h-5 w-5 text-brand-green"></i>
-                            </div>
-                            <div class="h-52 overflow-hidden bg-stone-900">
-                                <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQ8MZAK0GlIsKRJWd6ea2FIIkiPznBFPfPo1J7JyvS_WoO--WznvxeUCuFwWIatsIBfb3_WXqVg9kCsMGY" alt="Violet Crown Trail stock view" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            </div>
-                            <div class="h-52 overflow-hidden bg-stone-900">
-                                <img src="image.png" alt="Violet Crown Trail route map" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                             </div>
                         </div>
 
